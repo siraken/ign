@@ -5,7 +5,7 @@
 Run the following command:
 
 ```bash
-go build -i ign
+go build -o ign
 sudo ./install
 ```
 
