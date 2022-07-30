@@ -1,4 +1,4 @@
-module github.com/SiraKen/ignore-cli
+module github.com/SiraKen/ign
 
 go 1.18
 
