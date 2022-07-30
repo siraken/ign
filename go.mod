@@ -1,4 +1,4 @@
-module github.com/siraken/ignore-cli
+module github.com/SiraKen/ignore-cli
 
 go 1.18
 
