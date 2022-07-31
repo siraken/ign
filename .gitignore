@@ -25,3 +25,5 @@ ign
 
 # Misc
 .DS_Store
+
+dist/
