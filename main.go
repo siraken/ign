@@ -14,7 +14,7 @@ func main() {
 	if len(os.Args) < 2 {
 		fmt.Println("Usage: ign <language name>")
 		os.Exit(1)
-	}
+  }
 
 	name := os.Args[1]
 

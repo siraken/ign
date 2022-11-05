@@ -1,11 +1,7 @@
-# This is an example .goreleaser.yml file with some sensible defaults.
-# Make sure to check the documentation at https://goreleaser.com
 before:
   hooks:
-    # You may remove this if you don't use go modules.
     - go mod tidy
-    # you may remove this if you don't need go generate
-    - go generate ./...
+    # - go generate ./...
 builds:
   - env:
       - CGO_ENABLED=0
@@ -14,7 +10,8 @@ builds:
       - windows
       - darwin
 archives:
-  - replacements:
+  - name_template: "{{ .ProjectName }}_{{ .Os }}_{{ .Arch }}{{ if .Arm }}v{{ .Arm }}{{ end }}"
+    replacements:
       darwin: Darwin
       linux: Linux
       windows: Windows
@@ -24,9 +21,3 @@ checksum:
   name_template: 'checksums.txt'
 snapshot:
   name_template: "{{ incpatch .Version }}-next"
-changelog:
-  sort: asc
-  filters:
-    exclude:
-      - '^docs:'
-      - '^test:'

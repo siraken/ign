@@ -1,17 +1,9 @@
 # ign - .ignore downloader
 
-## Build and installation
-
-Run the following command:
+## Installation
 
 ```bash
-make install
-```
-
-To uninstall, run the command below:
-
-```bash
-make uninstall
+go install github.com/SiraKen/ign@latest
 ```
 
 ## Usage
