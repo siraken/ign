@@ -1,4 +1,4 @@
-module github.com/SiraKen/ign
+module github.com/siraken/ign
 
 go 1.18
 

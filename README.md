@@ -3,7 +3,7 @@
 ## Installation
 
 ```bash
-go install github.com/SiraKen/ign@latest
+go install github.com/siraken/ign@latest
 ```
 
 ## Usage
